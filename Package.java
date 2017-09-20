@@ -1,6 +1,10 @@
-/*\
- * Created by robert hubbard on 9/7/17.
+/**
+ * @author Robert Hubbard Emily Leyendecker
+ * @since 9/7/17.
+ *
+ * constructs Package object for data entry
  */
+
 public class Package{
     private String origionalString;
     private String trackingNumber;
