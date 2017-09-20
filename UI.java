@@ -1,5 +1,5 @@
-/*
- * Created by robert hubbard on 9/12/17.
+/* @author Robert Hubbard Emily Leyendecker
+ * @since 9/12/17.
  */
 import java.util.*;
 public class UI {
@@ -15,6 +15,9 @@ public class UI {
         System.out.println("5-Show packages within a given weight range");
         System.out.println("6-Exit Program");
     }
+    /**
+     * outputs a formatted display of ArrayList contents
+     */
     public static void printDataBase(){
         String[] categories = {"TRACKING NUMBER", "TYPE", "SPECIFICATION",
                 "MAILING CLASS", "WEIGHT", "VOLUME"};
@@ -30,6 +33,9 @@ public class UI {
         }
 
     }
+    /**
+     * prints each item in Package object in format
+     */
     public static void printPackage(int x){
         System.out.printf("%-19s", DataBase.List.get(x).getTrackingNumber());
         System.out.printf("%-8s", DataBase.List.get(x).getType());
@@ -39,6 +45,9 @@ public class UI {
         System.out.printf("%-10d", DataBase.List.get(x).getVolume());
         System.out.println();
     }
+    /**
+     * @param x user input for menu choice
+     */
     public static void getMenuChoice(int x) throws Exception{
         switch (x) {
             // Show all existing packages records in the database (unordered)
