@@ -1,6 +1,8 @@
-/*
+/**
+ * @author Robert Hubbard Emily Leyendecker
+ * @since 9.12.17
  *
- *
+ * Main Application class
  */
 
 import java.util.*;
@@ -9,7 +11,8 @@ public class Main {
         Scanner menuInput = new Scanner(System.in);
         DataBase.loadData();
         UI.printMenu();
-        int input;
+        // user input for menu choice
+        int input; 
             do {
                 input = menuInput.nextInt();
                 UI.getMenuChoice(input);
