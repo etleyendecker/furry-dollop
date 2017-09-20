@@ -5,8 +5,8 @@ import java.util.*;
 public class UI {
     static Scanner menuInput = new Scanner(System.in);
     static String stringInput;
-    static float floatInput1;
-    static float floatInput2;
+    static float floatInput1; // minimum weight input 
+    static float floatInput2; // maximum weight input
     public static void printMenu(){
         System.out.println("1-Show all packages");
         System.out.println("2-Add a new package");
