@@ -1,6 +1,10 @@
-/*
- * Created by robert hubbard on 9/12/17.
+/**
+ * @author Robert Hubbard Emily Leyendecker 
+ * @since 9/12/17.
+ *
+ * UI object user interface containing methods for menu choices
  */
+
 import java.util.*;
 public class UI {
     static Scanner menuInput = new Scanner(System.in);
